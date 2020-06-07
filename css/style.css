@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body { 
+    background-color: #121212;
+}
 
 img {
     z-index: -1;
@@ -14,9 +17,17 @@ img {
 }
 
 .clock {
-    position: absolute;
     font-size: 100px;
     font-weight: bold;
-    color: #ffff;
+    color: #aaa;
+    padding: 0 25px;
+}
+
+/* LONDON CLOCK */
+
+.london_clock {
+    font-size: 100px;
+    font-weight: bold;
+    color: #aaa;
     padding: 0 25px;
 }
