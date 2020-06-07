@@ -16,7 +16,9 @@ img {
     height: 100vh;
 }
 
-.clock {
+/* UTC TIME */
+
+.newyork_clock {
     font-size: 100px;
     font-weight: bold;
     color: #aaa;
@@ -32,6 +34,14 @@ img {
     padding: 0 25px;
 }
 
+/* SAO PAULO CLOCK */
+
+.saopaulo_clock {
+    font-size: 100px;
+    font-weight: bold;
+    color: #aaa;
+    padding: 0 25px;
+}
 
 /* TOKYO CLOCK */
 

@@ -5,6 +5,19 @@ const currentTimezone = new Date();
 // london UTC: +1
 // sao paulo UTC: -3
 
+//---------------------
+//   UTC TIMEZONE
+//---------------------
+
+const utc_timezone = currentTimezone.getTimezoneOffset();
+
+// console.log('UTC offset: ' + utc_timezone);
+
+currentTimezone.setMinutes(currentTimezone.getMinutes() + utc_timezone);
+
+// console.log('UTC: ' + timeNow);
+
+
 
 //---------------------
 // NEW YORK TIMEZONE
@@ -20,31 +33,13 @@ function newYorkTime() {
     const sec = time.getSeconds();
     
     //add time to document
-    document.querySelector('.clock').innerHTML = hour + ':' + mins + ':' + sec;
+    document.querySelector('.newyork_clock').innerHTML = hour + ':' + mins + ':' + sec;
 }
-
-setInterval(newYorkTime, 1000);
-
-
-//---------------------
-//   UTC TIMEZONE
-//---------------------
-
-const utc_timezone = currentTimezone.getTimezoneOffset();
-
-// console.log('UTC offset: ' + utc_timezone);
-
-currentTimezone.setMinutes(currentTimezone.getMinutes() + utc_timezone);
-
-// console.log('UTC: ' + timeNow);
-
-
 
 
 //---------------------
 //   LONDON TIME
 //---------------------
-
 
 function londonTime() {
     //store current date/time in a variable
@@ -59,9 +54,24 @@ function londonTime() {
     document.querySelector('.london_clock').innerHTML = hour + ':' + mins + ':' + sec;
 }
 
-setInterval(londonTime, 1000);
 
 
+//---------------------
+//  SAO PAULO TIME
+//---------------------
+
+function saoPauloTime() {
+    //store current date/time in a variable
+    const time = new Date();
+
+    //get current time
+    const hour = time.getHours();
+    const mins = time.getMinutes();
+    const sec = time.getSeconds();
+    
+    //add time to document
+    document.querySelector('.saopaulo_clock').innerHTML = hour + ':' + mins + ':' + sec;
+}
 
 
 //---------------------
@@ -82,7 +92,9 @@ function tokyoTime() {
     document.querySelector('.tokyo_clock').innerHTML = hour + ':' + mins + ':' + sec;
 }
 
+
+
+setInterval(newYorkTime, 1000);
+setInterval(londonTime, 1000);
+setInterval(saoPauloTime, 1000);
 setInterval(tokyoTime, 1000);
-
-
-
