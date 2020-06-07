@@ -1,13 +1,22 @@
-body {
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
     height: 100vh;
 }
 
 .clock {
+    position: absolute;
     font-size: 100px;
     font-weight: bold;
-    color: #aaa;
+    color: #ffff;
+    padding: 0 25px;
 }
