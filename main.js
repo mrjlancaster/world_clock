@@ -10,7 +10,6 @@ function currentTime() {
     
     //add time to document
     document.querySelector('.clock').innerHTML = hour + ':' + mins + ':' + sec;
-
 }
 
 setInterval(currentTime, 1000);

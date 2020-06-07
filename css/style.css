@@ -1,13 +1,13 @@
 body {
     background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .clock {
     font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
     color: #aaa;
-    height: 100vh;
 }
