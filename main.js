@@ -116,3 +116,71 @@ setInterval(newYorkTime, 1000);
 setInterval(londonTime, 1000);
 setInterval(saoPauloTime, 1000);
 setInterval(tokyoTime, 1000);
+
+
+//--------DISPLAY TIME----------//   
+
+
+const changeTime = function() {
+
+    const newYorkNow = document.querySelector('.newyork-time');
+    const londonNow = document.querySelector('.london-time');
+    const saoPauloNow = document.querySelector('.saopaulo-time');
+    const tokyoNow = document.querySelector('.tokyo-time');
+
+    let newYork = document.querySelector('.new-york');
+    let london = document.querySelector('.london');
+    let saoPaulo = document.querySelector('.sao-paulo');
+    let tokyo = document.querySelector('.tokyo');
+
+    newYorkNow.addEventListener('click', displayNewYork);
+    londonNow.addEventListener('click', displayLondon);
+    saoPauloNow.addEventListener('click', displaySaoPaulo);
+    tokyoNow.addEventListener('click', displayTokyo);
+
+     
+    function displayNewYork() {
+        let displayNewYork = document.querySelector('.new-york');
+      
+        
+        document.querySelector('.new-york').style.display = "block";
+        document.querySelector('.london').style.display = "none";
+        document.querySelector('.sao-paulo').style.display = "none";
+        document.querySelector('.tokyo').style.display = "none";
+        
+
+        displayNewYork.classList.add('active');
+    }
+
+    function displayLondon() {
+        let displayLondon = document.querySelector('.london');
+        
+        document.querySelector('.new-york').style.display = "none";
+        document.querySelector('.london').style.display = "block";
+        document.querySelector('.sao-paulo').style.display = "none";
+        document.querySelector('.tokyo').style.display = "none";
+        
+        displayLondon.classList.add('active');
+    }
+
+    function displaySaoPaulo() {
+        let displaySP = document.querySelector('.sao-paulo');
+        
+        document.querySelector('.new-york').style.display = "none";
+        document.querySelector('.london').style.display = "none";
+        document.querySelector('.sao-paulo').style.display = "block";
+        document.querySelector('.tokyo').style.display = "none";
+    }
+
+    function displayTokyo() {
+        let displayTokyo = document.querySelector('.tokyo');
+        
+        document.querySelector('.new-york').style.display = "none";
+        document.querySelector('.london').style.display = "none";
+        document.querySelector('.sao-paulo').style.display = "none";
+        document.querySelector('.tokyo').style.display = "block";
+        
+    }
+}
+
+changeTime();

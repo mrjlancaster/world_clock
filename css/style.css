@@ -19,6 +19,10 @@ img {
     opacity: .5;
 }
 
+.heading_container {
+    padding: 10px;
+}
+
 .title {
     text-align: center;
     font-size: 140px;
@@ -33,6 +37,7 @@ img {
     margin: 0 50px;
     font-size: 18px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 
@@ -53,7 +58,7 @@ img {
 }
 
 .newyork_clock {
-    font-size: 400px;
+    font-size: 350px;
     color: #dcdde1;
     text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
@@ -76,7 +81,7 @@ img {
 }
 
 .london_clock {
-    font-size: 400px;
+    font-size: 350px;
     color: #dcdde1;
     text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
@@ -98,7 +103,7 @@ img {
 }
 
 .saopaulo_clock {
-    font-size: 400px;
+    font-size: 350px;
     color: #dcdde1;
     text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
@@ -120,7 +125,11 @@ img {
 }
 
 .tokyo_clock {
-    font-size: 400px;
+    font-size: 350px;
     color: #dcdde1;
     text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.active {
+    display: block;
 }
