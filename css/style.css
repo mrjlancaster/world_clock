@@ -8,25 +8,38 @@ body {
     background-color: #121212;
 }
 
+/* global style */
+
 img {
     z-index: -1;
     object-fit: cover;
     width: 100%;
     position: absolute;
     height: 100vh;
-    opacity: .6;
+    opacity: .5;
 }
 
 .title {
+    text-align: center;
     font-size: 140px;
     color: #dcdde1;
     text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
+.timezone_cities {
+    display: inline-block;
+    text-decoration: underline;
+    color: #dcdde1;
+    margin: 0 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
 /* NEW YORK TIME */
 
 .new-york {
-    display: none;
+    display: block;
 }
 
 .newyork_clock-container {
@@ -93,7 +106,7 @@ img {
 /* TOKYO CLOCK */
 
 .tokyo {
-    display: block;
+    display: none;
 }
 
 .tokyo_clock-container {
