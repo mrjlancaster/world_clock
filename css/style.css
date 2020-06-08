@@ -14,40 +14,100 @@ img {
     width: 100%;
     position: absolute;
     height: 100vh;
+    opacity: .6;
 }
 
-/* UTC TIME */
+.title {
+    font-size: 140px;
+    color: #dcdde1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* NEW YORK TIME */
+
+.new-york {
+    display: none;
+}
+
+.newyork_clock-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
 
 .newyork_clock {
-    font-size: 100px;
-    font-weight: bold;
-    color: #aaa;
-    padding: 0 25px;
+    font-size: 400px;
+    color: #dcdde1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
 
 /* LONDON CLOCK */
 
+.london {
+    display: none;
+}
+
+.london_clock-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
 .london_clock {
-    font-size: 100px;
-    font-weight: bold;
-    color: #aaa;
-    padding: 0 25px;
+    font-size: 400px;
+    color: #dcdde1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 /* SAO PAULO CLOCK */
 
+.sao-paulo {
+    display: none;
+}
+
+.saopaulo_clock-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
 .saopaulo_clock {
-    font-size: 100px;
-    font-weight: bold;
-    color: #aaa;
-    padding: 0 25px;
+    font-size: 400px;
+    color: #dcdde1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 /* TOKYO CLOCK */
 
+.tokyo {
+    display: block;
+}
+
+.tokyo_clock-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
 .tokyo_clock {
-    font-size: 100px;
-    font-weight: bold;
-    color: #aaa;
-    padding: 0 25px;
+    font-size: 400px;
+    color: #dcdde1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
