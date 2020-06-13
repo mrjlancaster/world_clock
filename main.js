@@ -12,7 +12,6 @@
 // now set current timezone to UTC
 // currentTimezone.setMinutes(currentTimezone.getMinutes() + utc);
 
-
 //---------------------
 // NEW YORK TIMEZONE
 //---------------------
@@ -120,44 +119,46 @@ setInterval(tokyoTime, 1000);
 
 //--------DISPLAY TIME----------//   
 
+let items = ['new-york', 'london', 'sao-paulo', 'tokyo'];
+
+
 const changeTime = function() {
 
-    const newYorkNow = document.querySelector('.newyork-time');
-    const londonNow = document.querySelector('.london-time');
-    const saoPauloNow = document.querySelector('.saopaulo-time');
-    const tokyoNow = document.querySelector('.tokyo-time');
-
-    newYorkNow.addEventListener('click', displayNewYork);
-    londonNow.addEventListener('click', displayLondon);
-    saoPauloNow.addEventListener('click', displaySaoPaulo);
-    tokyoNow.addEventListener('click', displayTokyo);
+    const newYorkNow = document.getElementById('newyork-time');
+    const londonNow = document.getElementById('london-time');
+    const saoPauloNow = document.getElementById('saopaulo-time');
+    const tokyoNow = document.getElementById('tokyo-time');
 
     let newYork = document.querySelector('.new-york');
     let london = document.querySelector('.london');
     let saoPaulo = document.querySelector('.sao-paulo');
     let tokyo = document.querySelector('.tokyo');
 
+    newYorkNow.addEventListener('click', displayNewYork);
+    londonNow.addEventListener('click', displayLondon);
+    saoPauloNow.addEventListener('click', displaySaoPaulo);
+    tokyoNow.addEventListener('click', displayTokyo);
 
     function displayNewYork() {
-        newYork.style.display = 'block';
         london.style.display = 'none';
         saoPaulo.style.display = 'none';
         tokyo.style.display = 'none';
+        newYork.style.display = 'block';
+  
     }
 
-   
     function displayLondon() {
         newYork.style.display = 'none';
-        london.style.display = 'block';
         saoPaulo.style.display = 'none';
         tokyo.style.display = 'none';
+        london.style.display = 'block';
     }
 
     function displaySaoPaulo() {
         newYork.style.display = 'none';
         london.style.display = 'none';
-        saoPaulo.style.display = 'block';
         tokyo.style.display = 'none';
+        saoPaulo.style.display = 'block';
     }
 
     function displayTokyo() {
