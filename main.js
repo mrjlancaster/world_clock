@@ -121,7 +121,6 @@ setInterval(tokyoTime, 1000);
 
 let items = ['new-york', 'london', 'sao-paulo', 'tokyo'];
 
-
 const changeTime = function() {
 
     const newYorkNow = document.getElementById('newyork-time');
