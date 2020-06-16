@@ -110,7 +110,6 @@ function tokyoTime() {
     document.querySelector('.tokyo_clock').innerHTML = hour + ':' + mins + ':' + sec;
 }
 
-
 setInterval(newYorkTime, 1000);
 setInterval(londonTime, 1000);
 setInterval(saoPauloTime, 1000);
@@ -118,7 +117,6 @@ setInterval(tokyoTime, 1000);
 
 
 //--------DISPLAY TIME----------//   
-
 
 let newYork = document.querySelector('.new-york');
 let london = document.querySelector('.london');
@@ -130,7 +128,6 @@ function displayNewYork() {
     saoPaulo.style.display = 'none';
     tokyo.style.display = 'none';
     newYork.style.display = 'block';
-
 }
 
 function displayLondon() {
