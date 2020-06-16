@@ -119,53 +119,37 @@ setInterval(tokyoTime, 1000);
 
 //--------DISPLAY TIME----------//   
 
-let items = ['new-york', 'london', 'sao-paulo', 'tokyo'];
 
-const changeTime = function() {
+let newYork = document.querySelector('.new-york');
+let london = document.querySelector('.london');
+let saoPaulo = document.querySelector('.sao-paulo');
+let tokyo = document.querySelector('.tokyo');
 
-    const newYorkNow = document.getElementById('newyork-time');
-    const londonNow = document.getElementById('london-time');
-    const saoPauloNow = document.getElementById('saopaulo-time');
-    const tokyoNow = document.getElementById('tokyo-time');
+function displayNewYork() {
+    london.style.display = 'none';
+    saoPaulo.style.display = 'none';
+    tokyo.style.display = 'none';
+    newYork.style.display = 'block';
 
-    let newYork = document.querySelector('.new-york');
-    let london = document.querySelector('.london');
-    let saoPaulo = document.querySelector('.sao-paulo');
-    let tokyo = document.querySelector('.tokyo');
-
-    newYorkNow.addEventListener('click', displayNewYork);
-    londonNow.addEventListener('click', displayLondon);
-    saoPauloNow.addEventListener('click', displaySaoPaulo);
-    tokyoNow.addEventListener('click', displayTokyo);
-
-    function displayNewYork() {
-        london.style.display = 'none';
-        saoPaulo.style.display = 'none';
-        tokyo.style.display = 'none';
-        newYork.style.display = 'block';
-  
-    }
-
-    function displayLondon() {
-        newYork.style.display = 'none';
-        saoPaulo.style.display = 'none';
-        tokyo.style.display = 'none';
-        london.style.display = 'block';
-    }
-
-    function displaySaoPaulo() {
-        newYork.style.display = 'none';
-        london.style.display = 'none';
-        tokyo.style.display = 'none';
-        saoPaulo.style.display = 'block';
-    }
-
-    function displayTokyo() {
-        newYork.style.display = 'none';
-        london.style.display = 'none';
-        saoPaulo.style.display = 'none';
-        tokyo.style.display = 'block';
-    }
 }
 
-changeTime();
+function displayLondon() {
+    newYork.style.display = 'none';
+    saoPaulo.style.display = 'none';
+    tokyo.style.display = 'none';
+    london.style.display = 'block';
+}
+
+function displaySaoPaulo() {
+    newYork.style.display = 'none';
+    london.style.display = 'none';
+    tokyo.style.display = 'none';
+    saoPaulo.style.display = 'block';
+}
+
+function displayTokyo() {
+    newYork.style.display = 'none';
+    london.style.display = 'none';
+    saoPaulo.style.display = 'none';
+    tokyo.style.display = 'block';
+}
